@@ -19,11 +19,6 @@ export const Main = ({ podcasts }) => {
   };
   return (
     <>
-      <header className="p-2 border-b mb-2">
-        <a className="font-medium text-sky-800 hover:underline cursor-pointer">
-          PodCaster
-        </a>
-      </header>
       <FilterBar
           podcastsAmount={filteredPodcasts.length}
           onChange={filterPodcasts}
@@ -33,6 +28,7 @@ export const Main = ({ podcasts }) => {
           <PodcastCard
             title={podcast.title}
             key={podcast.id}
+            id={podcast.id}
             author={podcast.author}
             imgUrl={podcast.imgUrl}
           />

@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
-import { getPodcasts } from "../../services/getPodcasts";
+import { getRemoteData } from "../../services/getRemoteData";
 
 export const useFetchPodcasts = () => {
   const [podcasts, setPodcasts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingPodcasts, setIsLoading] = useState(true);
 
   const getData = async () => {
-    const rawPodcasts = await getPodcasts();
-    const allPodcasts = rawPodcasts.map((podcast) => ({
+    const rawPodcasts = await getRemoteData("https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json");
+    const allPodcasts = rawPodcasts.feed?.entry?.map((podcast) => ({
       id: podcast.id?.attributes["im:id"],
       title: podcast["im:name"]?.label,
       author: podcast["im:artist"]?.label,
       imgUrl: podcast["im:image"][2]?.label,
+      description: podcast.summary?.label,
     }));
     localStorage.setItem("podcasts", JSON.stringify(allPodcasts));
     localStorage.setItem("podcastsTime", +new Date());
@@ -33,6 +34,6 @@ export const useFetchPodcasts = () => {
 
   return {
     podcasts,
-    isLoading,
+    isLoadingPodcasts,
   };
 };

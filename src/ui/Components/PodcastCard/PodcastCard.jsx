@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export const PodcastCard = ({ title, author, imgUrl }) => {
+export const PodcastCard = ({ title, author, imgUrl, id }) => {
+  const navigate = useNavigate();
   return (
-    <div className="w-1/4 ">
-      <div className="border text-center h-24 mx-4 my-16 shadow-md">
+    <div className="w-1/4">
+      <div className="border text-center h-24 mx-4 my-16 shadow-md cursor-pointer" onClick={() => navigate(`/podcast/${id}`)}>
         <div className="flex flex-col -translate-y-8 items-center">
           <img src={imgUrl} alt={title} className="w-16 h-16 rounded-full" />
           <h1
