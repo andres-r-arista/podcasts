@@ -14,7 +14,15 @@ export const useFetchPodcastDetails = (podcastId) => {
       title: rawPodcast.results[0]?.trackName,
       author: rawPodcast.results[0]?.artistName,
       imgUrl: rawPodcast.results[0]?.artworkUrl600,
-      episodes: rawPodcast.results?.slice(1),
+      episodes: rawPodcast.results
+        ?.slice(1)
+        .map((episode) => ({
+          trackId: episode.trackId,
+          trackName: episode.trackName,
+          description: episode.description,
+          episodeUrl: episode.episodeUrl,
+          trackTimeMillis: episode.trackTimeMillis,
+        })),
     };
     localStorage.setItem(
       `podcast${podcastId}`,
@@ -25,7 +33,9 @@ export const useFetchPodcastDetails = (podcastId) => {
   };
 
   useEffect(() => {
-    const podcastWithDate = JSON.parse(localStorage.getItem(`podcast${podcastId}`));
+    const podcastWithDate = JSON.parse(
+      localStorage.getItem(`podcast${podcastId}`)
+    );
     const podcast = podcastWithDate?.formattedPodcast;
     const savedDate = podcastWithDate?.savedDate;
     const yesterdayDate = +new Date(Date.now() - 24 * 3600 * 1000);

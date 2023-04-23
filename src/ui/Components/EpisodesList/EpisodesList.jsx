@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import convertMsToTime from "../../../application/Helpers/convertMsToTime";
 
-export const EpisodesList = ({ episodes }) => {
+export const EpisodesList = ({ episodes, podcastId }) => {
   const navigate = useNavigate();
   return (
     <div className="border m-4 shadow-md max-w-full px-4 py-8">
@@ -20,7 +20,7 @@ export const EpisodesList = ({ episodes }) => {
             <tr key={episode.trackId} className="even:bg-gray-50 border-b last:border-none leading-8">
               <td
                 className="text-sky-800 hover:underline cursor-pointer"
-                onClick={() => navigate(`/`)}
+                onClick={() => navigate(`/podcast/${podcastId}/episode/${episode.trackId}`)}
               >
                 {episode.trackName}
               </td>
