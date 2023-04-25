@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <App /> must match the snapshot 1`] = `
+<div>
+  <header
+    class="p-2 border-b mb-2"
+  >
+    <h1
+      class="font-medium text-sky-800 hover:underline cursor-pointer"
+      data-testid="title"
+    >
+      PodCaster
+    </h1>
+  </header>
+  <div
+    class="App"
+  >
+    <div
+      data-testid="main"
+    >
+      <div
+        class="flex justify-end mr-4"
+        data-testid="filter-bar"
+      >
+        <div
+          class="px-1 rounded-lg self-center mr-2 bg-sky-800 text-white font-bold"
+          data-testid="badge"
+        >
+          2
+        </div>
+        <input
+          class="border text-sm px-2 py-1 w-64 rounded"
+          data-testid="filter-bar-input"
+          placeholder="Filter podcasts..."
+          type="text"
+        />
+      </div>
+      <div
+        class="flex flex-wrap"
+      >
+        <div
+          class="w-1/4"
+          data-testid="podcast-card"
+        >
+          <div
+            class="border text-center h-24 mx-4 my-16 shadow-md cursor-pointer"
+            data-testid="podcast-card-box"
+          >
+            <div
+              class="flex flex-col -translate-y-8 items-center"
+            >
+              <img
+                alt="The Joe Budden Podcast"
+                class="w-16 h-16 rounded-full"
+                data-testid="podcast-card-image"
+                src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/170x170bb.png"
+              />
+              <h1
+                class="uppercase font-semibold truncate max-w-full text-sm px-2"
+                data-testid="podcast-card-title"
+                title="The Joe Budden Podcast"
+              >
+                The Joe Budden Podcast
+              </h1>
+              <h2
+                class="text-gray-400 font-semibold truncate max-w-full text-xs px-2"
+                data-testid="podcast-card-author"
+                title="The Joe Budden Network"
+              >
+                Author: The Joe Budden Network
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-1/4"
+          data-testid="podcast-card"
+        >
+          <div
+            class="border text-center h-24 mx-4 my-16 shadow-md cursor-pointer"
+            data-testid="podcast-card-box"
+          >
+            <div
+              class="flex flex-col -translate-y-8 items-center"
+            >
+              <img
+                alt="Million Dollaz Worth Of Game"
+                class="w-16 h-16 rounded-full"
+                data-testid="podcast-card-image"
+                src="https://is2-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7b/cf/f6/7bcff6bb-5f99-6c2f-c6c5-3a9799f3df21/mza_8544742664200824246.jpg/170x170bb.png"
+              />
+              <h1
+                class="uppercase font-semibold truncate max-w-full text-sm px-2"
+                data-testid="podcast-card-title"
+                title="Million Dollaz Worth Of Game"
+              >
+                Million Dollaz Worth Of Game
+              </h1>
+              <h2
+                class="text-gray-400 font-semibold truncate max-w-full text-xs px-2"
+                data-testid="podcast-card-author"
+                title="Barstool Sports"
+              >
+                Author: Barstool Sports
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

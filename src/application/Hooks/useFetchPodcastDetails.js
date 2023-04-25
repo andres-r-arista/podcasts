@@ -22,6 +22,7 @@ export const useFetchPodcastDetails = (podcastId) => {
           description: episode.description,
           episodeUrl: episode.episodeUrl,
           trackTimeMillis: episode.trackTimeMillis,
+          releaseDate: episode.releaseDate,
         })),
     };
     localStorage.setItem(

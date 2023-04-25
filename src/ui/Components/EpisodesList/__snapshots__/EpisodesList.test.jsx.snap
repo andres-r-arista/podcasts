@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <EpisodesList /> must match the snapshot 1`] = `
+<div>
+  <div
+    class="border m-4 shadow-md max-w-full px-4 py-8"
+  >
+    <table
+      class="table-auto w-full text-left text-sm"
+    >
+      <thead>
+        <tr
+          class="border-b"
+        >
+          <th>
+            Title
+          </th>
+          <th>
+            Date
+          </th>
+          <th>
+            Duration
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="even:bg-gray-50 border-b last:border-none leading-8"
+          data-testid="episodes-list-table-row"
+        >
+          <td
+            class="text-sky-800 hover:underline cursor-pointer"
+            data-testid="episodes-list-title"
+          >
+            Episode 620 | "Who Said?"
+          </td>
+          <td
+            data-testid="episodes-list-date"
+          >
+            4/22/2023
+          </td>
+          <td
+            data-testid="episodes-list-duration"
+          >
+            02:24:25
+          </td>
+        </tr>
+        <tr
+          class="even:bg-gray-50 border-b last:border-none leading-8"
+          data-testid="episodes-list-table-row"
+        >
+          <td
+            class="text-sky-800 hover:underline cursor-pointer"
+            data-testid="episodes-list-title"
+          >
+            Episode 619 | "Hate to be Frank"
+          </td>
+          <td
+            data-testid="episodes-list-date"
+          >
+            4/19/2023
+          </td>
+          <td
+            data-testid="episodes-list-duration"
+          >
+            02:49:52
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

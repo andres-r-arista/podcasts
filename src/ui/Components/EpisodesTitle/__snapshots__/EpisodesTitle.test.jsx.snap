@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <EpisodesTitle /> must match the snapshot 1`] = `
+<div>
+  <h1
+    class="border m-4 shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
+    data-testid="episodes-title-amount"
+  >
+    Episodes: 10
+  </h1>
+</div>
+`;

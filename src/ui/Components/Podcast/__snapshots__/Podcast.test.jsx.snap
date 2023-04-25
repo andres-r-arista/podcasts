@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <Podcast /> must match the snapshot 1`] = `
+<div>
+  <div
+    class="flex"
+  >
+    <div
+      class="border m-4 shadow-md mr-8 w-1/4 w-1/4 h-full"
+      data-testid="podcast-sidebar"
+    >
+      <div
+        class="border-b mx-2 px-8 py-4"
+      >
+        <img
+          alt="The Joe Budden Podcast"
+          class="w-32 h-32 cursor-pointer"
+          data-testid="podcast-sidebar-image"
+          src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/170x170bb.png"
+        />
+      </div>
+      <div
+        class="border-b mx-2 px-2 py-4 cursor-pointer"
+        data-testid="podcast-sidebar-box"
+      >
+        <h1
+          class="font-semibold truncate max-w-full text-sm px-2 pt-2"
+          data-testid="podcast-sidebar-title"
+          title="The Joe Budden Podcast"
+        >
+          The Joe Budden Podcast
+        </h1>
+        <h2
+          class="truncate max-w-full text-xs px-2 pb-2"
+          data-testid="podcast-sidebar-author"
+          title="The Joe Budden Network"
+        >
+          by The Joe Budden Network
+        </h2>
+      </div>
+      <div
+        class="border-b mx-2 px-2 py-4"
+      >
+        <h1
+          class="font-semibold truncate max-w-full text-xs px-2 pt-2"
+        >
+          Description:
+           
+        </h1>
+        <h2
+          class="italic max-w-full text-xs px-2 pb-2"
+          data-testid="podcast-sidebar-description"
+          title="Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends."
+        >
+          Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends.
+        </h2>
+      </div>
+    </div>
+    <div
+      class="w-3/4 pl-4"
+    >
+      <h1
+        class="border m-4 shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
+        data-testid="episodes-title-amount"
+      >
+        Episodes: 2
+      </h1>
+      <div
+        class="border m-4 shadow-md max-w-full px-4 py-8"
+      >
+        <table
+          class="table-auto w-full text-left text-sm"
+        >
+          <thead>
+            <tr
+              class="border-b"
+            >
+              <th>
+                Title
+              </th>
+              <th>
+                Date
+              </th>
+              <th>
+                Duration
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="even:bg-gray-50 border-b last:border-none leading-8"
+              data-testid="episodes-list-table-row"
+            >
+              <td
+                class="text-sky-800 hover:underline cursor-pointer"
+                data-testid="episodes-list-title"
+              >
+                A.I. Drake has put music in a tailspin
+              </td>
+              <td
+                data-testid="episodes-list-date"
+              >
+                4/21/2023
+              </td>
+              <td
+                data-testid="episodes-list-duration"
+              >
+                00:37:14
+              </td>
+            </tr>
+            <tr
+              class="even:bg-gray-50 border-b last:border-none leading-8"
+              data-testid="episodes-list-table-row"
+            >
+              <td
+                class="text-sky-800 hover:underline cursor-pointer"
+                data-testid="episodes-list-title"
+              >
+                BTS goes solo together
+              </td>
+              <td
+                data-testid="episodes-list-date"
+              >
+                4/18/2023
+              </td>
+              <td
+                data-testid="episodes-list-duration"
+              >
+                00:49:00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

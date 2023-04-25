@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import PropTypes from "prop-types";
+
 import { PodcastCard } from "../PodcastCard";
 import { FilterBar } from "../FilterBar";
 
@@ -18,13 +21,13 @@ export const Main = ({ podcasts }) => {
     );
   };
   return (
-    <>
+    <div data-testid="main">
       <FilterBar
-          podcastsAmount={filteredPodcasts.length}
+          podcastsAmount={filteredPodcasts.length || 0}
           onChange={filterPodcasts}
         />
       <div className="flex flex-wrap">
-        {filteredPodcasts.map((podcast) => (
+        {filteredPodcasts && filteredPodcasts.map((podcast) => (
           <PodcastCard
             title={podcast.title}
             key={podcast.id}
@@ -34,6 +37,10 @@ export const Main = ({ podcasts }) => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
+};
+
+Main.propTypes = {
+  podcasts: PropTypes.array.isRequired,
 };

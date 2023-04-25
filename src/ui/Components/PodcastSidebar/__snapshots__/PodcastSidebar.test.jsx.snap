@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <PodcastSidebar /> must match the snapshot 1`] = `
+<div>
+  <div
+    class="border m-4 shadow-md mr-8 w-1/4 test"
+    data-testid="podcast-sidebar"
+  >
+    <div
+      class="border-b mx-2 px-8 py-4"
+    >
+      <img
+        alt="Title"
+        class="w-32 h-32 cursor-pointer"
+        data-testid="podcast-sidebar-image"
+        src="http://www.google.com"
+      />
+    </div>
+    <div
+      class="border-b mx-2 px-2 py-4 cursor-pointer"
+      data-testid="podcast-sidebar-box"
+    >
+      <h1
+        class="font-semibold truncate max-w-full text-sm px-2 pt-2"
+        data-testid="podcast-sidebar-title"
+        title="Title"
+      >
+        Title
+      </h1>
+      <h2
+        class="truncate max-w-full text-xs px-2 pb-2"
+        data-testid="podcast-sidebar-author"
+        title="Author"
+      >
+        by Author
+      </h2>
+    </div>
+    <div
+      class="border-b mx-2 px-2 py-4"
+    >
+      <h1
+        class="font-semibold truncate max-w-full text-xs px-2 pt-2"
+      >
+        Description:
+         
+      </h1>
+      <h2
+        class="italic max-w-full text-xs px-2 pb-2"
+        data-testid="podcast-sidebar-description"
+        title="Description"
+      >
+        Description
+      </h2>
+    </div>
+  </div>
+</div>
+`;

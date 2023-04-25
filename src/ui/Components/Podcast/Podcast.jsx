@@ -13,14 +13,19 @@ export const Podcast = () => {
   const { podcasts, isLoadingPodcasts } = useFetchPodcasts();
   const { podcastDetails, isLoadingPodcastDetails } =
     useFetchPodcastDetails(podcastId);
-  const [podcast, setPodcast] = useState([]);
+  const [podcast, setPodcast] = useState({});
+  const [isLoadingPodcast, setIsLoadingPodcast] = useState(true);
   useEffect(() => {
+    if (!podcasts.length) {
+      return;
+    }
     setPodcast(podcasts.find((podcast) => podcast.id === podcastId));
+    setIsLoadingPodcast(false);
   }, [podcasts, podcastId]);
 
   return (
     <>
-      {isLoadingPodcasts || isLoadingPodcastDetails ? (
+      {isLoadingPodcasts || isLoadingPodcastDetails || isLoadingPodcast ? (
         <Spinner />
       ) : (
         <div className="flex">

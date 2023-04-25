@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <FilterBar /> must match the snapshot 1`] = `
+<div>
+  <div
+    class="flex justify-end mr-4"
+    data-testid="filter-bar"
+  >
+    <div
+      class="px-1 rounded-lg self-center mr-2 bg-sky-800 text-white font-bold"
+      data-testid="badge"
+    >
+      5
+    </div>
+    <input
+      class="border text-sm px-2 py-1 w-64 rounded"
+      data-testid="filter-bar-input"
+      placeholder="Filter podcasts..."
+      type="text"
+    />
+  </div>
+</div>
+`;

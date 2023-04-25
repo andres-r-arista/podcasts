@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "prop-types": "^15.8.1",
+    "puppeteer": "^18.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
@@ -15,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build && npm install -g serve && serve -s build",
-    "test": "react-scripts test --coverage"
+    "test": "react-scripts test --coverage",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +36,10 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "jest-fetch-mock": "^3.0.3",
     "tailwindcss": "^3.3.1"
   }
 }

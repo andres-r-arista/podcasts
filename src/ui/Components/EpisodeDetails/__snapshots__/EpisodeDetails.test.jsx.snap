@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <EpisodeDetails /> must match the snapshot 1`] = `
+<div>
+  <div
+    class="border m-4 shadow-md max-w-full px-4 py-4"
+  >
+    <h1
+      class="font-bold text-lg py-2"
+      data-testid="episode-details-title"
+    >
+      Title
+    </h1>
+    <h2
+      class="italic text-sm pb-4 border-b"
+      data-testid="episode-details-description"
+    >
+      Description
+    </h2>
+    <audio
+      class="w-full mt-4"
+      controls=""
+    >
+      <source
+        data-testid="episode-details-audio"
+        src="http://www.google.com"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+`;
