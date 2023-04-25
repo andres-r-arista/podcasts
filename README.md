@@ -1,4 +1,4 @@
-## Note: This app was developed in Windows and not tested in other Operating Systems. It should run fine in them but may require some small tweaks. If backend requests take too long it might be an issue with the AllOrigins endpoint used. Please retry a while later if that is the case.
+Note: This app was developed in Windows and not tested in other Operating Systems. It should run fine in them but may require some small tweaks. If backend requests take too long it might be an issue with the AllOrigins endpoint used. Please retry a while later if that is the case.
 
 ## Available Scripts
 
