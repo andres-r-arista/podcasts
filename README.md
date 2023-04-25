@@ -1,4 +1,12 @@
-Note: This app was developed in Windows and not tested in other Operating Systems. It should run fine in them but may require some small tweaks. If backend requests take too long it might be an issue with the AllOrigins endpoint used. Please retry a while later if that is the case.
+# Podcasts
+
+This application fetches podcasts from Apple iTunes API and lets you listen to them. You can also filter the list of podcasts, and fetched podcasts and their details will be saved locally for one day. It includes unit, integration and E2E tests.
+
+## Technologies used:
+React, Tailwind, React Testing Library, Jest, Puppeteer
+
+## Note: 
+This app was developed in Windows and not tested in other Operating Systems. It should run fine in them but may require some small tweaks. If backend requests take too long it might be an issue with the AllOrigins endpoint used. Please retry a while later if that is the case.
 
 ## Available Scripts
 
