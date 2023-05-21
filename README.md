@@ -7,8 +7,11 @@ React, Tailwind, React Testing Library, Jest, Puppeteer.
 
 ## Note: 
 This app was developed in Windows/Chrome and not tested in other environments. It should run fine in them but may require some small tweaks.
+
 Minimum tested device width: 500px.
+
 If backend requests take too long it might be an issue with the AllOrigins endpoint used (it is being used to avoid CORS problems). Please retry a while later if that is the case.
+
 
 ## Available Scripts
 
