@@ -3,7 +3,7 @@
 exports[`Tests in <App /> must match the snapshot 1`] = `
 <div>
   <header
-    class="p-2 border-b mb-2"
+    class="p-2 border-b md:mb-2"
   >
     <h1
       class="font-medium text-sky-800 hover:underline cursor-pointer"
@@ -19,7 +19,7 @@ exports[`Tests in <App /> must match the snapshot 1`] = `
       data-testid="main"
     >
       <div
-        class="flex justify-end mr-4"
+        class="flex justify-end mt-2 md:mt-0 mr-4"
         data-testid="filter-bar"
       >
         <div
@@ -39,7 +39,7 @@ exports[`Tests in <App /> must match the snapshot 1`] = `
         class="flex flex-wrap"
       >
         <div
-          class="w-1/4"
+          class="w-1/2 md:w-1/4"
           data-testid="podcast-card"
         >
           <div
@@ -73,7 +73,7 @@ exports[`Tests in <App /> must match the snapshot 1`] = `
           </div>
         </div>
         <div
-          class="w-1/4"
+          class="w-1/2 md:w-1/4"
           data-testid="podcast-card"
         >
           <div

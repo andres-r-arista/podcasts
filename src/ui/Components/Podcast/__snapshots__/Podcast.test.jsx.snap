@@ -3,10 +3,10 @@
 exports[`Tests in <Podcast /> must match the snapshot 1`] = `
 <div>
   <div
-    class="flex"
+    class="flex flex-col md:flex-row"
   >
     <div
-      class="border m-4 shadow-md mr-8 w-1/4 w-1/4 h-full"
+      class="border md:m-4 md:shadow-md md:mr-8 w-1/4 w-full md:w-1/4 h-full"
       data-testid="podcast-sidebar"
     >
       <div
@@ -39,7 +39,7 @@ exports[`Tests in <Podcast /> must match the snapshot 1`] = `
         </h2>
       </div>
       <div
-        class="border-b mx-2 px-2 py-4"
+        class="md:border-b mx-2 px-2 py-4"
       >
         <h1
           class="font-semibold truncate max-w-full text-xs px-2 pt-2"
@@ -57,16 +57,16 @@ exports[`Tests in <Podcast /> must match the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="w-3/4 pl-4"
+      class="w-full md:w-3/4 md:pl-4"
     >
       <h1
-        class="border m-4 shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
+        class="border-b md:border md:m-4 md:shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
         data-testid="episodes-title-amount"
       >
         Episodes: 2
       </h1>
       <div
-        class="border m-4 shadow-md max-w-full px-4 py-8"
+        class="md:border md:mb-4 mt-4 md:mx-4 md:shadow-md max-w-full px-4 py-8"
       >
         <table
           class="table-auto w-full text-left text-sm"

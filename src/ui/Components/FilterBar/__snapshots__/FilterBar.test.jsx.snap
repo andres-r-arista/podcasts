@@ -3,7 +3,7 @@
 exports[`Tests in <FilterBar /> must match the snapshot 1`] = `
 <div>
   <div
-    class="flex justify-end mr-4"
+    class="flex justify-end mt-2 md:mt-0 mr-4"
     data-testid="filter-bar"
   >
     <div

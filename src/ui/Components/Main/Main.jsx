@@ -23,7 +23,7 @@ export const Main = ({ podcasts }) => {
   return (
     <div data-testid="main">
       <FilterBar
-          podcastsAmount={filteredPodcasts.length || 0}
+          podcastsAmount={(filteredPodcasts && filteredPodcasts.length) || 0}
           onChange={filterPodcasts}
         />
       <div className="flex flex-wrap">

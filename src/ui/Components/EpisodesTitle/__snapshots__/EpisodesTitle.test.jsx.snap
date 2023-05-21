@@ -3,7 +3,7 @@
 exports[`Tests in <EpisodesTitle /> must match the snapshot 1`] = `
 <div>
   <h1
-    class="border m-4 shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
+    class="border-b md:border md:m-4 md:shadow-md font-bold truncate max-w-full text-lg h-12 px-2 pt-2"
     data-testid="episodes-title-amount"
   >
     Episodes: 10

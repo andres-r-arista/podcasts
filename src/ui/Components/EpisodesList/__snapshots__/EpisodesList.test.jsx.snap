@@ -3,7 +3,7 @@
 exports[`Tests in <EpisodesList /> must match the snapshot 1`] = `
 <div>
   <div
-    class="border m-4 shadow-md max-w-full px-4 py-8"
+    class="md:border md:mb-4 mt-4 md:mx-4 md:shadow-md max-w-full px-4 py-8"
   >
     <table
       class="table-auto w-full text-left text-sm"

@@ -28,16 +28,16 @@ export const Podcast = () => {
       {isLoadingPodcasts || isLoadingPodcastDetails || isLoadingPodcast ? (
         <Spinner />
       ) : (
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <PodcastSidebar
             title={podcast?.title}
             id={podcastId}
             author={podcast?.author}
             imgUrl={podcast?.imgUrl}
             description={podcast?.description}
-            className="w-1/4 h-full"
+            className="w-full md:w-1/4 h-full"
           />
-          <div className="w-3/4 pl-4">
+          <div className="w-full md:w-3/4 md:pl-4">
             <EpisodesTitle amount={podcastDetails?.episodes?.length} />
             <EpisodesList
               episodes={podcastDetails?.episodes}

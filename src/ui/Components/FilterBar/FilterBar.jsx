@@ -6,7 +6,7 @@ import { Badge } from "../Badge/";
 
 export const FilterBar = ({ podcastsAmount, onChange }) => {
   return (
-    <div className="flex justify-end mr-4" data-testid="filter-bar">
+    <div className="flex justify-end mt-2 md:mt-0 mr-4" data-testid="filter-bar">
       <Badge
         label={podcastsAmount.toString()}
         className="mr-2 bg-sky-800 text-white font-bold"

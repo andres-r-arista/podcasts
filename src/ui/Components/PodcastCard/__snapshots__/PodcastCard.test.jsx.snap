@@ -3,7 +3,7 @@
 exports[`Tests in <PodcastCard /> must match the snapshot 1`] = `
 <div>
   <div
-    class="w-1/4"
+    class="w-1/2 md:w-1/4"
     data-testid="podcast-card"
   >
     <div

@@ -3,7 +3,7 @@
 exports[`Tests in <EpisodeDetails /> must match the snapshot 1`] = `
 <div>
   <div
-    class="border m-4 shadow-md max-w-full px-4 py-4"
+    class="border-b md:border md:m-4 md:shadow-md max-w-full px-4 py-4"
   >
     <h1
       class="font-bold text-lg py-2"

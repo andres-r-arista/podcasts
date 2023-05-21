@@ -3,7 +3,7 @@
 exports[`Tests in <PodcastSidebar /> must match the snapshot 1`] = `
 <div>
   <div
-    class="border m-4 shadow-md mr-8 w-1/4 test"
+    class="border md:m-4 md:shadow-md md:mr-8 w-1/4 test"
     data-testid="podcast-sidebar"
   >
     <div
@@ -36,7 +36,7 @@ exports[`Tests in <PodcastSidebar /> must match the snapshot 1`] = `
       </h2>
     </div>
     <div
-      class="border-b mx-2 px-2 py-4"
+      class="md:border-b mx-2 px-2 py-4"
     >
       <h1
         class="font-semibold truncate max-w-full text-xs px-2 pt-2"

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export const EpisodeDetails = ({ title, description, episodeUrl }) => {
   return (
-    <div className="border m-4 shadow-md max-w-full px-4 py-4">
+    <div className="border-b md:border md:m-4 md:shadow-md max-w-full px-4 py-4">
       <h1 className="font-bold text-lg py-2" data-testid="episode-details-title">{title}</h1>
       <h2
         className="italic text-sm pb-4 border-b"

@@ -6,7 +6,7 @@ exports[`Tests in <Main /> must match the snapshot 1`] = `
     data-testid="main"
   >
     <div
-      class="flex justify-end mr-4"
+      class="flex justify-end mt-2 md:mt-0 mr-4"
       data-testid="filter-bar"
     >
       <div
@@ -26,7 +26,7 @@ exports[`Tests in <Main /> must match the snapshot 1`] = `
       class="flex flex-wrap"
     >
       <div
-        class="w-1/4"
+        class="w-1/2 md:w-1/4"
         data-testid="podcast-card"
       >
         <div
@@ -60,7 +60,7 @@ exports[`Tests in <Main /> must match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="w-1/4"
+        class="w-1/2 md:w-1/4"
         data-testid="podcast-card"
       >
         <div

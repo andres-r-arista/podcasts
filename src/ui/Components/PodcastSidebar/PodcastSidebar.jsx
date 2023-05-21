@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const PodcastSidebar = ({ title, author, imgUrl, id, description, className }) => {
   const navigate = useNavigate();
   return (
-    <div className={`border m-4 shadow-md mr-8 w-1/4 ${className}`} data-testid="podcast-sidebar">
+    <div className={`border md:m-4 md:shadow-md md:mr-8 w-1/4 ${className}`} data-testid="podcast-sidebar">
       <div className="border-b mx-2 px-8 py-4">
         <img
           src={imgUrl}
@@ -34,7 +34,7 @@ export const PodcastSidebar = ({ title, author, imgUrl, id, description, classNa
           title={author}
         >{`by ${author}`}</h2>
       </div>
-      <div className="border-b mx-2 px-2 py-4">
+      <div className="md:border-b mx-2 px-2 py-4">
         <h1 className="font-semibold truncate max-w-full text-xs px-2 pt-2">
           Description:{" "}
         </h1>

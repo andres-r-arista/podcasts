@@ -8,7 +8,7 @@ import convertMsToTime from "../../../application/Helpers/convertMsToTime";
 export const EpisodesList = ({ episodes, podcastId }) => {
   const navigate = useNavigate();
   return (
-    <div className="border m-4 shadow-md max-w-full px-4 py-8">
+    <div className="md:border md:mb-4 mt-4 md:mx-4 md:shadow-md max-w-full px-4 py-8">
       <table className="table-auto w-full text-left text-sm">
         <thead>
           <tr className="border-b">

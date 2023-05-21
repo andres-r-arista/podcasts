@@ -25,7 +25,7 @@ export const Episode = () => {
     );
   }, [podcastDetails, episodeId]);
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       {isLoadingPodcasts || isLoadingPodcastDetails ? (
         <Spinner />
       ) : (
@@ -36,9 +36,9 @@ export const Episode = () => {
             author={podcast?.author}
             imgUrl={podcast?.imgUrl}
             description={podcast?.description}
-            className="w-1/4 h-full"
+            className="w-full md:w-1/4 h-full"
           />
-          <div className="w-3/4 pl-4">
+          <div className="w-full md:w-3/4 md:pl-4">
             <EpisodeDetails
               title={episode?.trackName}
               description={episode?.description}
